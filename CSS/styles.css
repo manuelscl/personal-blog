@@ -9,8 +9,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', 'Monospace';
     font-size: 62.5%;
+}
+body {
+    font-family: 'Varela Round', 'Roboto Mono';
+    /* font-family: 'Roboto Mono', monospace; */
 }
 .no__scroll {
     position: fixed;
@@ -75,7 +78,7 @@ nav .aboutMe {
     text-decoration: underline;
 }
 
-/* Home main */
+/* Home Main */
 .home {
     width: 100%;
     height: 100%;
@@ -104,13 +107,96 @@ nav .aboutMe {
 .home__btn button {
     font-size: 1.8rem;
     color: var(--black-color);
-    padding: 12px 35px;
+    padding: 14px 35px;
     border-radius: 3px;
     border: none;
     cursor: pointer;
     transition: 0.3s ease;
+    font-family: 'Varela Round', sans-serif;
 }
 .home__btn button:hover {
-    background-color: rgb(159, 158, 158);
     color: var(--white-color);
+    background-color: rgb(199, 199, 199);
+    box-shadow: 0 0 35px 3px rgba(255, 255, 255, 0.455);
+}
+
+/* PROFILE */
+.profile__content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    padding: 40px 70px;
+    background: #ecf0f4;
+}
+.profile__img img {
+    width: 450px;
+}
+.profile__description h1 {
+    font-size: 2.4rem;
+    color: rgb(43, 43, 43);
+}
+.profile__description p {
+    font-size: 1.8rem;
+    color: rgb(81, 81, 81);
+    max-width: 700px;
+    padding-right: 50px;
+    letter-spacing: 0.1px;
+    line-height: 24px;
+    margin-top: 20px;
+}
+
+/* Profile-Projects */
+.profile__projects {
+    width: 100%;
+    text-align: center;
+    padding: 40px 0;
+}
+.profile__border {
+    width: 30%;
+    height: 1px;
+    background: rgb(175, 175, 175);
+    margin: 0 auto;
+    transition: 0.3s ease;
+}
+.profile__projects:hover .profile__border {
+    width: 90%;
+}
+.profile__projects h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 24px;
+}
+.profile__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+    margin-top: 40px;
+    padding: 0 100px;
+}
+.profile__card {
+    margin: 30px 0 0 0;
+}
+.profile__card h3 {
+    margin-top: 30px;
+    font-size: 1.7rem;
+}
+
+/* Footer */
+.footer__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #22272d;
+    border-top: 20px solid #48cfad;
+    height: 100px;
+}
+.footer__container .footer__cp {
+    font-size: 1.6rem;
+    color: white;
+}
+.footer__cp a {
+    font-size: 1.6rem;
+    color: rgb(255, 252, 174);
 }
