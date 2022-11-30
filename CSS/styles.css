@@ -12,7 +12,7 @@
     font-size: 62.5%;
 }
 body {
-    font-family: 'Varela Round', 'Roboto Mono';
+    font-family: 'Roboto Mono', 'Varela Round';
     /* font-family: 'Roboto Mono', monospace; */
 }
 .no__scroll {
@@ -106,7 +106,6 @@ nav .aboutMe {
 }
 .home__btn button {
     font-size: 1.8rem;
-    color: var(--black-color);
     padding: 14px 35px;
     border-radius: 3px;
     border: none;
@@ -114,9 +113,12 @@ nav .aboutMe {
     transition: 0.3s ease;
     font-family: 'Varela Round', sans-serif;
 }
+.home__btn button a {
+    color: var(--black-color);
+}
 .home__btn button:hover {
     color: var(--white-color);
-    background-color: rgb(199, 199, 199);
+    background-color: rgb(147, 147, 147);
     box-shadow: 0 0 35px 3px rgba(255, 255, 255, 0.455);
 }
 
@@ -152,7 +154,7 @@ nav .aboutMe {
     text-align: center;
     padding: 40px 0;
 }
-.profile__border {
+.border {
     width: 30%;
     height: 1px;
     background: rgb(175, 175, 175);
@@ -231,4 +233,92 @@ nav .aboutMe {
 .footer__cp a {
     font-size: 1.6rem;
     color: rgb(255, 252, 174);
+}
+
+/* Blog */
+.blogs__news {
+    display: flex;
+    gap: 80px;
+    padding: 40px 70px;
+    background:#ECF0F4;
+}
+.news__img p {
+    font-size: 19px;
+    font-weight: bold;
+    margin: 0 0 15px 0;
+}
+.news__img img {
+    width: 500px;
+}
+.news__info {
+    padding: 35px 0 0 0;
+}
+.news__info h1 {
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+.news__info p {
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 27px;
+    margin-bottom: 10px;
+    width: 90%;
+}
+.btn-gs {
+    display: inline-block;
+    font-size: 16px;
+    color: black;
+    background: none;
+    border: 2px solid #48cfad;
+    padding: 10px 25px;
+    margin-top: 20px;
+    letter-spacing: 0.6px;
+    transition: 0.3s ease;
+    text-transform: uppercase;
+}
+.btn-gs:hover {
+    background: #48cfad;
+}
+.btn-gs:active {
+    transform: scale(0.9);
+}
+
+.blogposts {
+    padding: 40px 0 80px;
+}
+.blogposts:hover .border {
+    width: 90%;
+}
+.blogposts__title {
+    font-size: 19px;
+    text-align: center;
+    margin: 0 0 25px;
+}
+
+.blogs__container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 50px 0;
+    padding: 0 70px;
+    margin: 40px 0 0 0;
+}
+.blogposts__card {
+    background: white;
+    border: 1px solid black;
+    width: 350px;
+}
+.blogposts__card img {
+    width: 100%;
+}
+.blogposts__info {
+    padding: 0 20px 20px;
+}
+.blogposts__card h3 {
+    font-size: 17px;
+    font-weight: 500;
+    margin: 15px 0;
+}
+.blogposts__card p {
+    font-size: 15px;
 }
